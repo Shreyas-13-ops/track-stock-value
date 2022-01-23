@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+label{
+    display: block;
+    padding-bottom: 1rem;
+}
+#submit-btn{
+    padding: .5rem 1rem;
+    width: 20%;
+}
