@@ -24,33 +24,23 @@ function submitHandler() {
 }
 
 function calculateProfitAndLoss(initial, quantity, current) {
-  if (current > initial) {
-    //Profit
-    let profit = (current - initial) * quantity;
-    let profitPercent = (profit / initial) * 100;
-    profitPercent.toFixed(2);
-
-    showOutput(
-      `Here is your profit is ₹${profit} and your profit percentage is ${profitPercent}%.`
-    );
-
-    // For testing
-    console.log(
-      `Here is your profit of ₹${profit} and your loss percentage is ${profitPercent}%.`
-    );
-  } else if (initial > current) {
+  if (initial > current) {
     //Loss
     let loss = (initial - current) * quantity;
     let lossPercent = (loss / initial) * 100;
     lossPercent.toFixed(2);
 
     showOutput(
-      `Here is your loss is ₹${loss} and your loss percentage is ${lossPercent}%.`
+      `Hey your loss is ₹${loss} and your loss percentage is ${lossPercent}%.`
     );
+  } else if (current > initial) {
+    //Profit
+    let profit = (current - initial) * quantity;
+    let profitPercent = (profit / initial) * 100;
+    profitPercent.toFixed(2);
 
-    // For testing
-    console.log(
-      `Here is your loss is ₹${loss} and your loss percentage is ${lossPercent}%.`
+    showOutput(
+      `Hey your profit is ₹${profit} and your profit percentage is ${profitPercent}%.`
     );
   } else {
     //Equal
