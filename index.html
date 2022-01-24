@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Stock Analysis | Check your stock performance</title>
-</head>
-<body>
-    <h1>Stock Analysis</h1>
+  </head>
+  <body>
     <main>
+      <div class="left-side">
+        <h1>Stock Analysis</h1>
         <label for="initial-price">
-            Initial Price: 
-            <input type="number" id="initial-price" placeholder="Enter your initial stock price here">
+          Initial Price:
+          <input
+            type="number"
+            id="initial-price"
+            placeholder="Enter your initial stock price here"
+          />
         </label>
         <label for="stock-quantity">
-            Stock Quantity: 
-            <input type="number" id="stock-quantity" placeholder="Enter total number of stocks purchased here">
+          Stock Quantity:
+          <input
+            type="number"
+            id="stock-quantity"
+            placeholder="Enter total number of stocks purchased here"
+          />
         </label>
         <label for="current-price">
-            Current Price: 
-            <input type="number" id="current-price" placeholder="Enter your current stock price here">
+          Current Price:
+          <input
+            type="number"
+            id="current-price"
+            placeholder="Enter your current stock price here"
+          />
         </label>
         <!-- Submit Button -->
-        <button id="submit-btn">Tell me!!</button>
+        <button id="submit-btn">Tell me!</button>
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="right-side">
         <!-- Output box -->
         <div id="output-box"></div>
+      </div>
     </main>
     <!-- Script -->
     <script src="script/main.js"></script>
-</body>
+  </body>
 </html>
